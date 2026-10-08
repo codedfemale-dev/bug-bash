@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A tiny developer arcade game. Squash bugs, collect coffee and protect the rubber ducks.">
+  <title>Bug Bash | Deploy on Friday</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="wrap masthead"><a href="https://codedfemale.com">Coded Female<span class="dot">.</span></a><span class="edition">THE DEVELOPER ARCADE / 001</span></header>
+  <main class="wrap">
+    <section class="intro" aria-labelledby="title">
+      <div><p class="eyebrow">A QUICK BREAK FROM YOUR ACTUAL BUGS</p><h1 id="title">Bug Bash<span class="dot">.</span></h1><p class="tagline">Deploy on Friday. What could go wrong?</p><p class="description">Squash the bugs. Fuel up on coffee. Keep your rubber duck out of the incident report.</p></div>
+      <div class="commit" aria-hidden="true"><span>latest commit</span><code><b>fix:</b> probably fine 🤞</code><small>tests passed on my machine</small></div>
+    </section>
+    <section class="arcade" aria-label="Bug Bash game">
+      <div class="game-column">
+        <div class="stats"><div><span>SCORE</span><strong id="score">0000</strong></div><div><span id="time-label">SECONDS</span><strong id="time">30</strong></div><div><span>BUILD HEALTH</span><strong id="health" aria-label="5 of 5 lives">●●●●●</strong></div><div><span>BEST RUN</span><strong id="best">0000</strong></div></div>
+        <div class="terminal">
+          <div class="terminal-bar"><span class="lights" aria-hidden="true">● ● ●</span><span>production / friday.exe</span><span id="mode-label">READY</span></div>
+          <div class="board-shell">
+            <div class="board" id="board" role="group" aria-label="Game grid. Keys 1 to 9 match the squares from left to right, top to bottom."></div>
+            <div class="overlay" id="overlay"><p class="eyebrow" id="overlay-kicker">ALL SYSTEMS PROBABLY GO</p><h2 id="overlay-title">Ready to ship?</h2><p id="overlay-copy">30 seconds. Five lives.<br>One deeply questionable deployment.</p><button class="primary" id="start">Start the chaos ↗</button></div>
+          </div>
+          <div class="terminal-bottom"><span id="combo">STREAK 0 · ×1</span><span id="status" role="status" aria-live="polite">Waiting for a brave developer.</span></div>
+        </div>
+        <div class="controls"><button id="pause" disabled>Pause</button><button id="finish" disabled>End run</button><label class="practice"><input type="checkbox" id="practice"> Practice mode</label></div>
+        <p class="keyboard">Click, tap or use <kbd>1</kbd> to <kbd>9</kbd>. <kbd>P</kbd> pauses. <kbd>Enter</kbd> starts or resumes.</p>
+      </div>
+      <aside class="field-guide"><p class="eyebrow">YOUR SURVIVAL GUIDE</p><h2>A very normal <br>day in tech.</h2><div class="rule"><span class="rule-icon bug-icon" aria-hidden="true">🐛</span><div><h3>Squash the bugs</h3><p>+10 points. Build a streak for up to ×3 points. Miss one and lose a life.</p></div></div><div class="rule"><span class="rule-icon" aria-hidden="true">☕</span><div><h3>Accept the coffee</h3><p>+3 seconds, up to 45 remaining. It’s a dependency, obviously.</p></div></div><div class="rule"><span class="rule-icon" aria-hidden="true">🦆</span><div><h3>Respect the duck</h3><p>Your debugging colleague. Click it and lose 15 points, a life and your streak.</p></div></div><div class="note"><code>// no pressure</code><p>Practice mode has no timer, no lost lives and slower targets. Coffee gives +5 points instead.</p></div></aside>
+    </section>
+    <noscript><p>Please enable JavaScript to play Bug Bash.</p></noscript>
+  </main>
+  <footer class="wrap"><span>A little game by Coded Female.</span><span>No meetings. No tickets. Just bugs.</span></footer>
+</body>
+</html>
